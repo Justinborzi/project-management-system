@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Middleware\UserLocale;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,6 +13,53 @@
 |
 */
 
+
+/**
+ * 
+ ** Method: Index()
+ ** Desc: Loades the landing page as base index.
+ * 
+ */
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
+});
+
+/**
+ * 
+ ** Method: projects()
+ ** Desc: Display the currently listed projects.
+ * 
+ */
+Route::get('projects', function () {
+    return view('projects');
+});
+
+/**
+ * 
+ ** Method: Blog() #1
+ ** Desc: Load blog and their posts.
+ * 
+ */
+Route::get('blog', function () {
+    return view('blog.index');
+});
+
+
+Route::get('blog/p/{PostID}', 'PostsController@show');
+
+Route::get('users/{id}', function ($id) {
+    return view('users');
+});
+
+Route::get('admin', function () {
+
+    $username = request('username');
+    $pass = request('pass');
+    $id = request('id');
+
+    return view('admin.index', [
+        "username" => $username,
+        "password" => $pass,
+        "id" => $id
+    ]);
 });

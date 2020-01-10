@@ -46,5 +46,5 @@ Hope you enjoy me struggling if you are watching the stream! **[TTV/MysticSeagul
 - [Appoly](https://www.appoly.co.uk)
 - [OP.GG](https://op.gg)
 
-## License
+## Licenses
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
