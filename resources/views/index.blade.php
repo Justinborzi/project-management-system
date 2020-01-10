@@ -446,10 +446,10 @@
             <div class="f-contact-us">
                 <h2 class="f-title">Contact</h2>
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li><a href="mailto:example@domain.com">example@domain.com</a></li>
+                    <li>8219 O'Reilly Drive</li>
+                    <li>172-890-1358</li>
+                    <li>Website Design</li>
                 </ul>
             </div>
             <div class="f-social-media">
