@@ -13,6 +13,8 @@ I plan to make small improvements and make the harder systems over time.
 
 Hope you enjoy me struggling if you are watching the stream! **[TTV/MysticSeagull](https://twitch.tv/mysticseagull)**
 
+[![Build Status](https://travis-ci.com/Justinborzi/project-management-system.svg?token=9ExsAJyqpm6DiBYpQv4i&branch=dev)](https://travis-ci.com/Justinborzi/project-management-system)
+
 ## Libs Included
 
 - **[Laravel](https://laravel.com/)**
