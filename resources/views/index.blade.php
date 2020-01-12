@@ -439,7 +439,7 @@
                 <ul>
                     <li><a href="">Home</a></li>
                     <li><a href="http://">Projects</a></li>
-                <li><a href={{}}>Blog</a></li>
+                    <li><a href="">Blog</a></li>
                     <li><a href="http://">Users</a></li>
                 </ul>
             </div>
