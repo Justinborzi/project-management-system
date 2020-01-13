@@ -10,6 +10,6 @@
         </style>
     </head>
     <body>
-        <h1>Logged in as: <?= $username ?>.</h1>
+        
     </body>
 </html>

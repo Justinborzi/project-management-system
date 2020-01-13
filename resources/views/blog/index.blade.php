@@ -3,14 +3,12 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Laravel</title>
+        <title>Blog - All Posts</title>
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-        <style>
-
-        </style>
     </head>
     <body>
-        <h1>INDEX BLOG</h1>
-        <p>k</p>
+        <div>
+
+        </div>
     </body>
 </html>

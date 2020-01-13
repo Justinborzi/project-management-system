@@ -30,10 +30,8 @@ Route::get('/', function () {
  ** Desc: Display the currently listed projects.
  * 
  */
-Route::get('projects', function () {
-    return view('projects');
-});
-
+Route::get('projects', 'ProjectsController@getAllProjects');
+Route::get('projects/p/{projID}', 'ProjectsController@getProject');
 /**
  * 
  ** Method: Blog() #1
@@ -46,20 +44,10 @@ Route::get('blog', function () {
 
 
 Route::get('blog/p/{PostID}', 'PostsController@show');
+Route::get('blog', 'PostsController@showAll');
 
 Route::get('users/{id}', function ($id) {
     return view('users');
 });
 
-Route::get('admin', function () {
-
-    $username = request('username');
-    $pass = request('pass');
-    $id = request('id');
-
-    return view('admin.index', [
-        "username" => $username,
-        "password" => $pass,
-        "id" => $id
-    ]);
-});
+Route::get('admin', 'AdminController@');
