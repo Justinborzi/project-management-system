@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Project Management Solution</title>
-        <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{asset("assets/css/global.css")}}">
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
         <link rel="stylesheet" href="assets/css/index.css">
     </head>

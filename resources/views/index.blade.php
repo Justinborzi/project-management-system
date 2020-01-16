@@ -63,6 +63,7 @@
                         <td><a href=""><img src="assets/images/github.png" alt="" srcset=""></a></td>
                     </tr>
                 </table>
+                <p style="position: absolute; bottom: 0; right: 0; margin: auto 5px; width: fit-content; color: white;">&copy; MysticSeagull • 2020 - <?= date("Y") ?></p>
             </div>
         </footer>
     </body>

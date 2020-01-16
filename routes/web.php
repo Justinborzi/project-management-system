@@ -50,4 +50,8 @@ Route::get('users/{id}', function ($id) {
     return view('users');
 });
 
-Route::get('admin', 'AdminController@');
+Route::get('admin', 'AdminController@showAllUsers');
+
+Route::get('login', function () {
+    return view("login");
+});

@@ -27,6 +27,10 @@
         max-height: 165px;
     }
 
+    .item table {
+        height: 125px;
+    }
+
     .item table tr > .title {
         font-size: 20px;
         font-weight: 600;
@@ -43,10 +47,11 @@
     }
 
     .item ul li {
-        width: 38px;
+        width: fit-content;
+        min-width: 35px;
         background: lightblue;
-        padding: 3px;
-        border-radius: 25px;
+        padding: 5px;
+        border-radius: 20px;
         text-align: center;
         color: white;
         margin: 5px;
@@ -60,7 +65,6 @@
                 <div class="item">
                     <table>
                         <tr>
-                            <td></td>
                             <td class="title">{{$item['project']}}</td>
                         </tr>
                         <tr>
@@ -69,9 +73,11 @@
 
                     </table>
                     <ul>
-                        <li>{{$item['tags']}}</li>
-                        <li>{{$item['tags']}}</li>
-                        <li>{{$item['tags']}}</li>
+                        @foreach (json_decode($item['tags']) as $tag)
+                            @foreach ($tag as $itemTag)
+                                <li>{{$itemTag}}</li>
+                            @endforeach
+                        @endforeach
                     </ul>
                 </div>
             </a>
