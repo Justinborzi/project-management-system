@@ -32,25 +32,28 @@ Route::get('/', function () {
  */
 Route::get('projects', 'ProjectsController@getAllProjects');
 Route::get('projects/p/{projID}', 'ProjectsController@getProject');
+
 /**
  * 
- ** Method: Blog() #1
+ ** Method: Blog()
  ** Desc: Load blog and their posts.
  * 
  */
-Route::get('blog', function () {
-    return view('blog.index');
-});
-
-
+Route::get('blog', function () {return view('blog.index');});
 Route::get('blog/p/{PostID}', 'PostsController@show');
 Route::get('blog', 'PostsController@showAll');
 
+/**
+ * 
+ ** Method: User()
+ ** Desc: Load Users List.
+ * 
+ */
 Route::get('users/{id}', function ($id) {
     return view('users');
 });
 
-Route::get('admin', 'AdminController@showAllUsers');
+Route::get('admin', 'AdminController@showDashboard');
 
 Route::get('login', function () {
     return view("login");

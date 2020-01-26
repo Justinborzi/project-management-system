@@ -12,7 +12,6 @@ class Admin extends Model
         $this->email = "Example Rank";
         $this->password = "Example Rank";
         $this->updated_at = date("Y-m-d H:i:s");
-
     }
 }
 

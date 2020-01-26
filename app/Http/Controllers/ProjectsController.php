@@ -10,7 +10,7 @@ class ProjectsController extends Controller
 {
     public function getAllProjects() {
         return view("projects.index", [
-            "projects" => $proj = Projects::all()
+            "projects" => Projects::paginate(20)
         ]);
     }
     

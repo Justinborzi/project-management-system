@@ -11,6 +11,11 @@ use App\Users;
 
 class AdminController extends Controller
 {
+
+    public function showDashboard() {
+        return view("admin.index");
+    }
+
     public function showAllUsers() {
         return view('admin.users', [
             "userObj" => Users::all() ? Users::all() : "No Users Found!"
@@ -26,6 +31,6 @@ class AdminController extends Controller
     public function editUser($id)
     { 
         $user = Users::where('id', $id)->FirstOrFail();
-        $user->InsertUserData();
+        //$user->InsertUserData();
     }
 }

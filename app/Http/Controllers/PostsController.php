@@ -16,8 +16,9 @@ class PostsController extends Controller
     }
 
     public function showAll() {
+
         return view('blog.index', [
-            "posts" => Post::all()     
+             "posts" => Post::paginate(20)
         ]);
     }
 }

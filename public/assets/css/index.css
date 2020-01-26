@@ -101,8 +101,8 @@ footer a {
         display: inline-grid;
         width: 100%;
         background: white;
-        border-bottom: 2px solid #000000cf;
-        grid-template-columns: auto auto;
+        border-bottom: 2px solid #0000004d;
+        grid-template-columns: auto a uto;
     }
 
     header ul {
