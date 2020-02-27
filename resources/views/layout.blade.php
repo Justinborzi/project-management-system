@@ -12,11 +12,11 @@
     <body>
         <header>
             <ul class="links">
-                <li><a href="javascript:void(0)">Home</a></li>
-                <li><a href="{{env('APP_FULL_URL')}}/projects">Projects</a></li>
-                <li><a href="{{env('APP_FULL_URL')}}/blog">Blog</a></li>
-                <li><a href="{{env('APP_FULL_URL')}}/users">Users</a></li>
-                <li><a href="{{env('APP_FULL_URL')}}/admin">Admin</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/projects">Projects</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/users">Users</a></li>
+                <li><a href="/admin">Admin</a></li>
             </ul>
         </header>
         @yield('content')
