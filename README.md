@@ -11,6 +11,8 @@
 Welcome to my first laravel project I am putting on github and actually sitting down to learn it, I will be using this project as a way to spend some time doing something.
 I plan to make small improvements and make the harder systems over time. 
 
+By no means is this project anywhere close to done, but I will be working on it when I have a little more free time on my hands
+
 Hope you enjoy me struggling if you are watching the stream! **[TTV/MysticSeagull](https://twitch.tv/mysticseagull)**
 
 ## Libs Included
